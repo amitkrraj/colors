@@ -78,10 +78,7 @@ body{
     }
   }
 
-  body .main-wrapper .branding img{
-      height: 100px;
-      width: 400px;
-  }
+
 
   .main-wrapper{
       position:relative;
