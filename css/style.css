@@ -78,6 +78,11 @@ body{
     }
   }
 
+  body .main-wrapper .branding img{
+      height: 100px;
+      width: 400px;
+  }
+
   .main-wrapper{
       position:relative;
       width:100%;
@@ -146,13 +151,6 @@ body{
     height:100%;
     overflow-x:auto;
 }
-
-
-
-
-
-
-
 
 
 
@@ -265,7 +263,7 @@ nav .navbar a:hover{
 }
 header.hero{
     height:600px;
-    background-image:url(../images/hero.png);
+    background-image:url(../images/hero123.png);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     overflow:hidden;
