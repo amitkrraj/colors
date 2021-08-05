@@ -259,9 +259,11 @@ nav .navbar a:hover{
     -o-transform:translateX(-50%);
 }
 header.hero{
+    margin-top: 50px;
     height:600px;
     background-image:url(../images/hero123.png);
     background-position: 0% 0%;
+    background-size: cover;
     background-repeat: no-repeat;
     overflow:hidden;
 }
