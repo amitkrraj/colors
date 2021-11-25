@@ -261,7 +261,7 @@ nav .navbar a:hover{
 header.hero{
     margin-top: 50px;
     height:600px;
-    background-image:url(../images/3.jpg);
+    /* background-image:url(../images/3.jpg); */
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
