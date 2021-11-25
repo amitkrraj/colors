@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="./css/silver.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <style>
+        .hoverContent{
+            background: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 92%;
+            height: 100%;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: all 0.5s;
+            border-radius: 0 5px 5px 0;
+        }
+        .product-image:hover .hoverContent{
+            left: 1px;
+        }
+    </style>
 </head>
 
 <body>
@@ -201,8 +220,27 @@
                             <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
                             <div class="food-slider">
                                 <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
+                                    <div class="product-image flex items-center justify-center" style="position: relative; overflow: hidden;">
                                         <img src="./images/products/22.jpg" alt="">
+                                        <div class="hoverContent">
+                                            <h3 style="color: gold; margin-bottom: 20px;">Braclet</h3>
+
+                                            <table>
+                                                <tr>
+                                                    <td>Base Material</td>
+                                                    <td>Brass</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Finish</td>
+                                                    <td>Gold</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>20 gm</td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
                                     </div>
                                     <hr>
                                     <div>
@@ -238,8 +276,27 @@
                                     </div>
                                 </div>
                                 <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
+                                    <div class="product-image flex items-center justify-center" style="position: relative; overflow: hidden;">
                                         <img src="./images/products/31.jpg" alt="">
+                                        <div class="hoverContent">
+                                            <h3 style="color: gold; margin-bottom: 20px;">Necklace</h3>
+
+                                            <table>
+                                                <tr>
+                                                    <td>Base Material</td>
+                                                    <td>Brass</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Finish</td>
+                                                    <td>Gold</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>10 gm</td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
                                     </div>
                                     <hr>
                                     <div>
@@ -276,8 +333,27 @@
                                     </div>
                                 </div>
                                 <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
+                                    <div class="product-image flex items-center justify-center" style="position: relative; overflow: hidden;">
                                         <img src="./images/products/36.jpg" alt="">
+                                        <div class="hoverContent">
+                                            <h3 style="color: gold; margin-bottom: 20px;">Ring</h3>
+
+                                            <table>
+                                                <tr>
+                                                    <td>Base Material</td>
+                                                    <td>Gold</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Finish</td>
+                                                    <td>Gold</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>7 gm</td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
                                     </div>
                                     <hr>
                                     <div>
@@ -314,8 +390,27 @@
                                     </div>
                                 </div>
                                 <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
+                                    <div class="product-image flex items-center justify-center" style="position: relative; overflow: hidden;">
                                         <img src="./images/products/28.jpg" alt="">
+                                        <div class="hoverContent">
+                                            <h3 style="color: gold; margin-bottom: 20px;">Kangan</h3>
+
+                                            <table>
+                                                <tr>
+                                                    <td>Base Material</td>
+                                                    <td>Gold</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Finish</td>
+                                                    <td>Gold</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Weight</td>
+                                                    <td>25 gm</td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
                                     </div>
                                     <hr>
                                     <div>
@@ -395,12 +490,13 @@
                                 <span>Seconds</span>
                             </div>
                         </div>
+
                     </div>
                 </section>
 
                 <section class="latest-news">
                     <div class="container">
-                        <h1 class="section-heading">Collection Sets</h1>
+                        <h1 class="section-heading">Fancy Items</h1>
                         <div class="article-wrapper">
                             <div class="image-grid">
                     <!-- <img class="image-grid-col-2 image-grid-row-2" src="./images/silver/1.jpg" alt="silver"> -->
@@ -509,22 +605,25 @@
                             <h3>Quik Links</h3>
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#" class="active">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">Collection</a>
+                                    <a href="./collection.html">Collection</a>
                                 </li>
                                 <li>
-                                    <a href="#">Gold</a>
+                                    <a href="./gold.html">Gold</a>
                                 </li>
                                 <li>
-                                    <a href="#">Silver</a>
+                                    <a href="./silver.html">Silver</a>
                                 </li>
                                 <li>
-                                    <a href="#">Platinum</a>
+                                    <a href="./platinum.html">Platinum</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact Us</a>
+                                    <a href="./coin.html">Coin</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">About Us</a>
                                 </li>
 
                             </ul>
