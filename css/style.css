@@ -370,7 +370,7 @@ section.top-products{
     position:absolute;
     bottom:-40px;
 }
-section.top-products .food-slider .food-card{
+section.top-products .item-slider .item-card{
     background:var(--heaven);
     padding:1.5rem 0;
     border-radius: 4px;
@@ -379,7 +379,7 @@ section.top-products .food-slider .food-card{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-section.top-products .food-slider .food-card .product-image img{
+section.top-products .item-slider .item-card .product-image img{
     width:80%;
     height:200px;
     object-fit:contain;
@@ -390,7 +390,7 @@ hr{
     opacity: 0.8;
     margin:1rem 0;
 }
-section.top-products .food-slider .food-card h2{
+section.top-products .item-slider .item-card h2{
     font-family:"Raleway-bold";
     font-size:1.3rem;
     margin-bottom:0.25rem;
@@ -398,18 +398,18 @@ section.top-products .food-slider .food-card h2{
 .text-center{
     text-align: center;
 }
-section.top-products .food-slider .food-card .stars{
+section.top-products .item-slider .item-card .stars{
     margin-bottom:0.5rem;
 }
-section.top-products .food-slider .food-card .stars img{
+section.top-products .item-slider .item-card .stars img{
     margin-right:0.25rem;
 }
-section.top-products .food-slider .food-card .price{
+section.top-products .item-slider .item-card .price{
     font-family:"Raleway-medium";
     color:var(--danger);
     margin-bottom: 1rem;
 }
-section.top-products .food-slider .food-card button{
+section.top-products .item-slider .item-card button{
     font-family:"Raleway-medium";
     color:var(--secondary);
     background:var(--heaven);
@@ -430,11 +430,11 @@ section.top-products .food-slider .food-card button{
     -ms-transition:all .3s ease;
     -o-transition:all .3s ease;
 }
-section.top-products .food-slider .food-card button:hover{
+section.top-products .item-slider .item-card button:hover{
     background:var(--primary);
     color:var(--heaven);
 }
-.food-slider .food-card button img{
+.item-slider .item-card button img{
     background:var(--primary);
     padding:0.50rem;
     height:32px;
