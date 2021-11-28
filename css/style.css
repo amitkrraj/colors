@@ -116,8 +116,8 @@ body{
       -ms-transform:rotate(90deg) scaleX(-1);
       -o-transform:rotate(90deg) scaleX(-1);
       width:35px;
-      height:40px;
-      background-color:rgba(218,165,32,0.3);
+      height:45px;
+      background-color:rgba(218,165,32,0.6);
       border: rgba(255,255,255,0.3) 1px solid;
       border-radius: 5px;
 }
@@ -929,7 +929,7 @@ footer.copyright a{
 }
 
 @media( max-width:576px){
-    
+
     header.hero .hero-image{
         right:-235px;
         top:150px;
