@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   $('.food-slider').slick({
+   $('.item-slider').slick({
       autoplay:true,
      slidesToShow:3,
      slidesToScroll:1,
