@@ -54,6 +54,7 @@ body{
     width:100%;
     padding:o 15px;
     margin:0 auto;
+    overflow: hidden;
 }
 
 @media (min-width:576px){
@@ -114,8 +115,11 @@ body{
       -moz-transform:rotate(90deg) scaleX(-1);
       -ms-transform:rotate(90deg) scaleX(-1);
       -o-transform:rotate(90deg) scaleX(-1);
-      width:40px;
+      width:35px;
       height:40px;
+      background-color:rgba(218,165,32,0.3);
+      border: rgba(255,255,255,0.3) 1px solid;
+      border-radius: 5px;
 }
 .site-content-wrapper{
     width:100%;
@@ -925,6 +929,7 @@ footer.copyright a{
 }
 
 @media( max-width:576px){
+    
     header.hero .hero-image{
         right:-235px;
         top:150px;

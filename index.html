@@ -9,27 +9,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/popup.css">
-    <link rel="stylesheet" href="./css/silver.css">
     <link rel="stylesheet" href="./css/table.css">
-    <style>
-        .hoverContent{
-            background: rgba(0, 0, 0, 0.8);
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 92%;
-            height: 100%;
-            overflow: hidden;
-            padding: 20px;
-            box-sizing: border-box;
-            transition: all 0.5s;
-            border-radius: 0 5px 5px 0;
-        }
-        .product-image:hover .hoverContent{
-            left: 1px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/product.css">
 </head>
 
 <body>
@@ -214,7 +195,7 @@
 
                 <section class="top-products">
                     <div class="container">
-                        <h1 class="section-heading">New Arrivals 2021 </h1>
+                        <h1 class="section-heading">Trending Items</h1>
                         <div class="slider">
                             <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt=""></button>
                             <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
@@ -245,30 +226,12 @@
                                     <hr>
                                     <div>
                                         <h2 class="text-center">Braclet</h2>
-                                        <!-- <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div> -->
+
                                         <div class="price text-center">
                                             ₹ 34,999
                                         </div>
                                         <div class="flex justify-center">
-
-                                            <div class="popup" id="popup-1">
-                                                <div class="overlay">
-                                                </div>
-                                                <div class="content">
-                                                    <div class="close-btn" onclick="togglePopup('popup-1')">&times;
-                                                    </div>
-                                                    <h1>Title</h1>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium                                              excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias                                               inventore nulla atque debitis.</p>
-                                                </div>
-                                            </div>
-
-                                            <button onclick="togglePopup('popup-1')">
+                                            <button>
                                                 <img src="" alt="">
                                                 <span>View Details</span>
                                             </button>
@@ -301,31 +264,12 @@
                                     <hr>
                                     <div>
                                         <h2 class="text-center">Necklace</h2>
-                                        <!-- <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div> -->
+
                                         <div class="price text-center">
                                             ₹ 17,499
                                         </div>
                                         <div class="flex justify-center">
-
-
-                                            <div class="popup" id="popup-2">
-                                                <div class="overlay">
-                                                </div>
-                                                <div class="content">
-                                                    <div class="close-btn" onclick="togglePopup('popup-2')">&times;
-                                                    </div>
-                                                    <h1>Title</h1>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium                                              excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias                                               inventore nulla atque debitis.</p>
-                                                </div>
-                                            </div>
-
-                                            <button onclick="togglePopup('popup-2')">
+                                            <button>
                                                 <img src="" alt="">
                                                 <span>View Details</span>
                                             </button>
@@ -359,30 +303,14 @@
                                     <div>
                                         <h2 class="text-center">Wedding Ring</h2>
                                         <div class="stars flex justify-center items-center">
-                                            <!-- <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt=""> -->
+
                                         </div>
                                         <div class="price text-center">
                                             ₹ 14,499
                                         </div>
                                         <div class="flex justify-center">
 
-
-                                            <div class="popup" id="popup-3">
-                                                <div class="overlay">
-                                                </div>
-                                                <div class="content">
-                                                    <div class="close-btn" onclick="togglePopup('popup-3')">&times;
-                                                    </div>
-                                                    <h1>Title</h1>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium                                              excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias                                               inventore nulla atque debitis.</p>
-                                                </div>
-                                            </div>
-
-                                            <button onclick="togglePopup('popup-3')">
+                                            <button>
                                                 <img src="" alt="">
                                                 <span>View Details</span>
                                             </button>
@@ -416,11 +344,7 @@
                                     <div>
                                         <h2 class="text-center">Kangan</h2>
                                         <div class="stars flex justify-center items-center">
-                                            <!-- <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt=""> -->
+
                                         </div>
                                         <div class="price text-center">
                                             ₹ 29,999
@@ -428,18 +352,7 @@
 
                                         <div class="flex justify-center">
 
-                                            <div class="popup" id="popup-4">
-                                                <div class="overlay">
-                                                </div>
-                                                <div class="content">
-                                                    <div class="close-btn" onclick="togglePopup('popup-4')">&times;
-                                                    </div>
-                                                    <h1>Title</h1>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium                                              excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias                                               inventore nulla atque debitis.</p>
-                                                </div>
-                                            </div>
-
-                                            <button onclick="togglePopup('popup-4')">
+                                            <button>
                                                 <img src="" alt="">
                                                 <span>View Details</span>
                                             </button>

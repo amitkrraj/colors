@@ -1,0 +1,51 @@
+
+.container .text{
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    letter-spacing: 0.03em;
+    word-spacing: 1px;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.about{
+    width: 90%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hjcard {
+  padding: 0 16px;
+  float: left;
+  width: 49.99999%;
+}
+
+.hjcard .carditem {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hjcard .carditem img {
+  width: 96%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hjcard {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hjcard {
+    width: 100%;
+  }
+}

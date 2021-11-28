@@ -1,16 +1,38 @@
-div.gallery {
-  border: 1px solid #ccc;
-  margin: 10px;
-  margin-bottom: 25px;
+* {
+  box-sizing: border-box;
 }
 
-div.gallery:hover {
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.responsive:hover{
+  box-shadow: 0 0 8px #888888;
+  transition: ease 0.5s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+div.gallery:hover{
   border: 2px solid gold;
+
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 div.desc {
@@ -22,15 +44,44 @@ div.desc {
   font-size: large;
 }
 
-* {
-  box-sizing: border-box;
+/* Hover on Category Effect */
+
+.hoverContent{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 88%;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    border-radius: 5px;
+    opacity: 0;
+    text-align: center;
+    color: rgb(240, 240, 240);
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+.hoverContent .border1{
+  border: rgb(200, 200, 200) 1px solid;
+  border-radius: 5px;
+  margin: 40% 25px;
+  text-align: center;
+  font-size: larger;
+  padding: 10px;
 }
+
+.responsive:hover .hoverContent{
+   opacity: 1;
+}
+
+.responsive:hover .desc{
+  color: #000;
+  transition: ease 0.5s;
+  font-weight: bold;
+}
+
+/* media query for responsive */
 
 @media only screen and (max-width: 700px) {
   .responsive {
@@ -49,4 +100,28 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Category by Gender */
+
+.responsiveG {
+  padding: 0 20px;
+  width: 33%;
+}
+
+.responsiveG .hoverContent{
+  height: 90%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsiveG {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsiveG {
+    width: 100%;
+  }
 }
