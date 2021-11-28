@@ -121,3 +121,10 @@ div.viewdetails {
     margin: 0 1px 30px 1px;
   }
 }
+
+/* content table design */
+td{
+    color: #fff;
+    padding: 5px;
+    padding-right: 25px;
+}
