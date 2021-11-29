@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+/* colors  */
+
+:root {
+  --primary: #eebf00;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #2d333f;
+}
+
 .resp {
   float: left;
   padding: 0 4px;
@@ -15,7 +28,6 @@
 .resp:hover {
   box-shadow: 0 0 8px #888888;
   transition: ease 0.3s;
-  cursor: pointer;
 }
 
 .resp .gallery {
@@ -37,34 +49,64 @@ div.desc {
   padding: 10px;
   margin-top: 10px;
   text-align: center;
-  color: goldenrod;
+  color: var(--secondary);
   text-decoration: solid;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .resp:hover .desc {
-  color: #000;
+  color: var(--primary);
   transition: ease 0.5s;
   font-weight: bold;
 }
 
-div.buynow{
+/* content table design */
+div.details {
   width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+div.details table tr {
+  border: none;
+}
+
+td {
+  color: var(--pure);
+  padding: 0 15px 15px 10px;
+}
+
+/* content buy now button */
+
+div.buynow {
+  width: 100%;
+  height: 100px;
   text-align: center;
   display: inline;
   float: left;
-  border: #888888 1px solid;
-  border-radius: 15px;
+  margin-top: 30px;
 }
 
-div.buynow button{
-  color: #888888;
+div.buynow button {
+  color: var(--light);
+  border: var(--ternary) 1px solid;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 20px;
 }
 
-.hoverContent .buynow img{
+div.buynow button:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.hoverContent .buynow img {
   width: 30px;
   height: 30px;
+  margin: 0 10px;
 }
 
 div.viewdetails {
@@ -74,12 +116,17 @@ div.viewdetails {
 
 .viewdetails .buybutton {
   padding: 10px 30px;
-  background-color: #fff;
-  border: gold 2px solid;
+  background-color: var(--pure);
+  border: var(--primary) 2px solid;
   border-radius: 4px;
   font-size: 17px;
+  color: var(--ternary);
+}
+
+div.viewdetails .buybutton:hover {
   cursor: pointer;
-  color: #666;
+  background-color: var(--primary);
+  transition: ease 0.4s;
 }
 
 /* Hover on Category Effect */
@@ -109,22 +156,16 @@ div.viewdetails {
 }
 /* media query for responsive */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .resp {
-    width: 49%;
+    width: 46%;
+    margin: 0 10px 30px 10px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .resp {
-    width: 100%;
-    margin: 0 1px 30px 1px;
+    width: 98%;
+    margin: 0 5px 30px 5px;
   }
-}
-
-/* content table design */
-td{
-    color: #fff;
-    padding: 5px;
-    padding-right: 25px;
 }

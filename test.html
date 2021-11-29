@@ -1,69 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/test.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/test.css" />
+    <style>
+      :root {
+        --primary: #eebf00;
+        --secondary: #232b38;
+        --ternary: #6c6c6c;
+        --danger: #fe4545;
+        --pure: #fefefe;
+        --light: #f0f0f0;
+        --heaven: #ffffff;
+        --footer: #2d333f;
+      }
+      .testcolor{
+          margin: 20px 0 20px 0;
+          width: 100%;
+          height: 20px;
+          color: var(--primary);
+          font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <div class="testcolor" style="background-color: var(--primary);">Primary</div>
+        <div class="testcolor" style="background-color: var(--secondary);">Secondary</div>
+        <div class="testcolor" style="background-color: var(--ternary);">Ternary</div>
+        <div class="testcolor" style="background-color: var(--danger);">Danger</div>
+        <div class="testcolor" style="background-color: var(--pure);">Pure</div>
+        <div class="testcolor" style="background-color: var(--light);">Light</div>
+        <div class="testcolor" style="background-color: var(--heaven);">Heaven</div>
+        <div class="testcolor" style="background-color: var(--footer);">Footer</div>
+    </div>
+    <br /><br /><br />
+
     <div class="container">
-        <div class="wrapper">
-            <div class="product-box">
-                <div class="all-images">
-                <div class="small-images">
-                    <img src="./images/collection/Gender/kids.jpg" onclick="clickimg(this)">
-                    <img src="./images/collection/Gender/men.jpg" onclick="clickimg(this)">
-                    <img src="./images/collection/payal.jpg" onclick="clickimg(this)">
-                    <img src="./images/collection/headjewel.jpg" onclick="clickimg(this)">
-                </div>
-                <div class="main-images">
-                    <img src="./images/collection/idols.jpg" id="imagebox">
-                </div>
-                </div>
+      <div class="wrapper">
+        <div class="product-box">
+          <div class="all-images">
+            <div class="small-images">
+              <img
+                src="./images/collection/Gender/kids.jpg"
+                onclick="clickimg(this)"
+              />
+              <img
+                src="./images/collection/Gender/men.jpg"
+                onclick="clickimg(this)"
+              />
+              <img
+                src="./images/collection/payal.jpg"
+                onclick="clickimg(this)"
+              />
+              <img
+                src="./images/collection/headjewel.jpg"
+                onclick="clickimg(this)"
+              />
             </div>
-
-            <div class="text">
-                <div class="content">
-                    <p class="brand">Brand : Apple</p>
-                    <h2>Apple iPhone 12 (white, 64GB)</h2>
-                    <div class="review">
-                        <span>(4.6)</span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="price-box">
-                        <p class="price">&#8377; 77,900</p>
-                        <p>&#8377; <strike> 85,900</strike></p>
-                    </div>
-                    <p>Size : <select name="size" id="">
-                        <option value="select colour">Select colour</option>
-                        <option value="black">black</option>
-                        <option value="blue">blue</option>
-                        <option value="green">green</option>
-                        <option value="purple">purple</option>
-                    </select></p>
-
-                    <p>Quantity <input type="text" value="1"></p>
-                    <button>
-                        <span class="fa fa-shopping-cart"></span>
-                        Add to Cart
-                    </button>
-                    <button class="buy">
-                        <span class="fa fa-shopping-cart"></span>
-                        Buy Now
-                    </button>
-                </div>
+            <div class="main-images">
+              <img src="./images/collection/idols.jpg" id="imagebox" />
             </div>
+          </div>
         </div>
+
+        <div class="text">
+          <div class="content">
+            <p class="brand">Brand : Apple</p>
+            <h2>Apple iPhone 12 (white, 64GB)</h2>
+            <div class="review">
+              <span>(4.6)</span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="price-box">
+              <p class="price">&#8377; 77,900</p>
+              <p>&#8377; <strike> 85,900</strike></p>
+            </div>
+            <p>
+              Size :
+              <select name="size" id="">
+                <option value="select colour">Select colour</option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="purple">purple</option>
+              </select>
+            </p>
+
+            <p>Quantity <input type="text" value="1" /></p>
+            <button>
+              <span class="fa fa-shopping-cart"></span>
+              Add to Cart
+            </button>
+            <button class="buy">
+              <span class="fa fa-shopping-cart"></span>
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
-        function clickimg(smallImg) {
-            var fullImg = document.getElementById("imagebox");
-            fullImg.src = smallImg.src
-        }
+      function clickimg(smallImg) {
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src;
+      }
     </script>
-</body>
+  </body>
 </html>

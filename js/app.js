@@ -26,7 +26,3 @@ $(document).ready(function(){
       $('.site-content-wrapper').toggleClass('scaled');
    })
 });
-
-function togglePopup(idname) {
-  document.getElementById(idname).classList.toggle("active");
-}
