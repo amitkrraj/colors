@@ -14,3 +14,43 @@
    height: 900px;
 
 }
+
+/* hr tag silver */
+
+hr.style-eight {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    color: #333;
+    text-align: center;
+}
+
+hr.style-eight:after {
+    content: "Platinum";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-weight: bolder;
+    letter-spacing: 8px;
+    font-size: 150px;
+    display: inline-block;
+    position: relative;
+    padding: 0px 0.8em;
+    padding-bottom: 10px;
+    background: #fff url(../images/logos/logo1smalll.png) no-repeat scroll center;
+    background-size: 20px 20px;
+    height: 60px;
+    top: -0.7em;
+    font-size: 3.0em;
+}
+
+.top-products .container .text{
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    font-weight: lighter;
+    font-size: 18px;
+}
