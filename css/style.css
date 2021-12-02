@@ -116,9 +116,9 @@ body{
       -ms-transform:rotate(90deg) scaleX(-1);
       -o-transform:rotate(90deg) scaleX(-1);
       width:35px;
-      height:45px;
-      background-color:rgba(218,165,32,0.6);
-      border: rgba(255,255,255,0.3) 1px solid;
+      height:43px;
+      background-color:rgba(218,165,32,0.8);
+      border: rgba(255,255,255,0.5) 1px solid;
       border-radius: 5px;
 }
 .site-content-wrapper{
@@ -185,7 +185,7 @@ body{
       align-items: center;
   }
   nav .top{
-      padding:1.5rem 0;
+      padding:1.1rem 0;
   }
   nav .top .contact h5,  nav .top .time h5{
       font-family:"Raleway-black";
@@ -285,11 +285,11 @@ nav .navbar a:hover{
 }
 
 header.hero{
-    margin-top: 20px;
-    height:600px;
+    margin-top: 10px;
+    height:500px;
     /* background-image:url(../images/3.jpg); */
     background-position: 0% 0%;
-    background-size: cover;
+    background-size: 100% 500px;
     background-repeat: no-repeat;
     overflow:hidden;
 }
