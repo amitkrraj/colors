@@ -17,11 +17,11 @@
 
 .resp {
   float: left;
-  margin: 0 20px 40px 20px;
-  width: 29%;
-  height: 420px;
+  margin: 10px;
+  width: 22%;
+  height: 330px;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .resp:hover {
@@ -31,27 +31,27 @@
 
 .resp .gallery {
   height: 400px;
-  margin: 30px;
+  margin: 10px;
   margin-bottom: 35px;
   position: relative;
   overflow: hidden;
+  justify-content: space-evenly;
 }
 
 .resp .gallery img {
   border-radius: 5px;
   width: 100%;
-  height: 250px;
+  height: 220px;
   overflow: hidden;
 }
 
 div.desc {
-  padding: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
   text-align: center;
   color: var(--secondary);
   text-decoration: solid;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .resp:hover .desc {
@@ -61,9 +61,10 @@ div.desc {
 }
 
 /* content table design */
+
 div.details {
   width: 100%;
-  height: 100px;
+  height: 110px;
   overflow: hidden;
 }
 
@@ -73,7 +74,7 @@ div.details table tr {
 
 td {
   color: var(--pure);
-  padding: 0 15px 15px 10px;
+  padding: 0 10px 10px 5px;
 }
 
 /* content buy now button */
@@ -103,23 +104,17 @@ div.buynow button:hover {
   transition: ease 0.3s;
 }
 
-.hoverContent .buynow img {
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
-}
-
 div.viewdetails {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .viewdetails .buybutton {
-  padding: 10px 30px;
+  padding: 6px 20px;
   background-color: var(--pure);
   border: var(--primary) 2px solid;
   border-radius: 4px;
-  font-size: 17px;
+  font-size: 15px;
   color: var(--ternary);
 }
 
@@ -137,23 +132,27 @@ div.viewdetails .buybutton:hover {
   top: 0;
   left: -100%;
   width: 92%;
-  height: 100%;
+  height: 85%;
   overflow: hidden;
-  padding: 20px;
+  padding: 15px 0 0 10px;
   box-sizing: border-box;
   transition: all 0.5s;
   border-radius: 0 5px 5px 0;
 }
 
-.product-image:hover .hoverContent {
-  left: 1px;
+.resp:hover .hoverContent {
+  left: 0px;
+  width: 100%;
+  height: 65%;
 }
 
-.resp:hover .hoverContent {
-  left: 1px;
-  width: 100%;
-  height: 62%;
+.hoverContent h4{
+  color: var(--primary);
+  margin-bottom: 13px;
+  margin-left: 7px;
+  font-weight: 800;
 }
+
 /* media query for responsive */
 
 @media only screen and (max-width: 1000px) {
