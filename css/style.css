@@ -135,11 +135,11 @@ body{
 }
 
 .site-content-wrapper.scaled{
-    transform:scale(0.9) translateX(90%);
-    -webkit-transform:scale(0.9) translateX(90%);
-    -moz-transform:scale(0.9) translateX(90%);
-    -ms-transform:scale(0.9) translateX(90%);
-    -o-transform:scale(0.9) translateX(90%);
+    transform:scale(0.9) translateX(80%);
+    -webkit-transform:scale(0.9) translateX(80%);
+    -moz-transform:scale(0.9) translateX(80%);
+    -ms-transform:scale(0.9) translateX(80%);
+    -o-transform:scale(0.9) translateX(80%);
     border-radius:3px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
@@ -840,7 +840,16 @@ footer.copyright a{
 
 .nav-background .mobile-logo{
     padding:1rem;
+    width: 160px;
+    height: auto;
+    overflow: hidden;
 }
+
+.nav-background .mobile-logo img{
+    width: 100%;
+    height: auto;
+}
+
 .nav-background .mobile-nav{
     padding:1rem;
 }
