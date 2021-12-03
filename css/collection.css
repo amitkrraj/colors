@@ -3,10 +3,12 @@
 }
 
 .responsive {
-  padding: 0 6px;
+  padding: 0 5px;
   float: left;
-  width: 24.99999%;
+  width: 23.99999%;
+  margin: 5px;
 }
+
 .responsive:hover{
   box-shadow: 0 0 8px #888888;
   transition: ease 0.5s;
