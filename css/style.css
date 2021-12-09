@@ -194,6 +194,7 @@ body{
 
   nav .top{
       padding: 0.8em;
+      background: url(../images/floral-pc.jpg);
   }
   nav .top .contact h5,  nav .top .time h5{
       font-family:"Raleway-black";
@@ -211,18 +212,76 @@ nav .top .contact img, nav .top .time img{
 
 nav .top .branding .title{
     height: 55px;
-    background: var(--light) url(../images/logos/logo5.png) no-repeat center;
+    /* background: var(--light) url(../images/logos/logo5.png) no-repeat center; */
     background-size: 55px 55px;
     background-position: 110px;
 }
 
 nav .top .branding .title pre{
     font: 2.1em "Fira Sans", serif;
-    color: #fff;
+    color: var(--primary);
     text-shadow: 0 0 3px #000, 0 0 5px #000;
     letter-spacing: 2px;
 }
 
+nav .top .searchBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .top .searchText{
+    width: 30rem;
+    padding: 0.6rem;
+    border: #c0c0c0 1px solid;
+    border-radius: 2rem;
+}
+
+nav .top .searchBtn{
+    text-decoration: none;
+    width: 5rem;
+    height: 5rem;
+    color: #888;
+    position: absolute;
+    right: -1rem;
+    display: grid;
+    place-items: center;
+}
+
+nav .top img{
+    width: 100%;
+    height: 55px;
+    background-color: var(--pure);
+    border-radius: 1.7rem;
+}
+
+/* header for mobile */
+
+div.mobile-topbar{
+    background-image: url(../images/floral-pc.jpg);
+    /* background-size: 100% 600px; */
+    position: sticky;
+    display: none;
+    text-align: center;
+}
+div.mobile-topbar .branding .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.mobile-topbar .branding .title .title-image img{
+    height: 90px;
+    width: 100%;
+}
+div.mobile-topbar .branding .title pre{
+    font: 2.1em "Fira Sans", serif;
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    letter-spacing: 2px;
+}
 
 .justify-center{
     justify-content:center;
@@ -231,27 +290,115 @@ nav .top .branding .title pre{
 nav .navbarmain{
     position: fixed;
 }
+/* nav navbar a tag style */
 
-nav .navbar a{
+nav .navbar ul li a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-family:"Raleway-semibold";
+    font-size:1.05rem;
+    padding:1rem 1.5rem;
+    transition: all .3s ease;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition:all .3s ease;
+}
+nav .navbar ul li a.active{
+    background:var(--primary);
+    color:var(--pure);
+}
+nav .navbar ul li a:hover{
+    background:var(--primary);
+    color:var(--pure);
+}
+
+/* nav navbar ul tag style */
+
+nav .navbar ul{
+    display: inline-flex;
+    list-style: none;
+    /* width: 100px; */
+    margin: 15px;
+}
+nav .navbar ul .sub-menu-1{
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: 1px solid #ebebeb;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0 0 0;
+    position: absolute;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+nav .navbar ul .collection:hover .sub-menu-1{
+    opacity: 1;
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    margin-top: 15px;
+    transform: perspective(600px) rotateX(0deg);
+}
+nav .navbar ul .collection .sub-menu-1 ul{
+    display: block;
+    /* flex-direction: row; */
+}
+nav .navbar ul .collection .sub-menu-1 ul li{
+    /* width: 130px; */
+    margin-left: -15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    /* display: flex; */
+}
+nav .navbar ul .collection .sub-menu-1 .fa{
+    margin-left: 6px;
+}
+nav .navbar ul .collection .sub-menu-1 .sub-menu-2{
+    display: none;
+    margin-bottom: -20px;
+}
+nav .navbar ul .collection .sub-menu-1 .sub-menu-heading:hover .sub-menu-2{
+    display: block;
+    margin-left: 100px;
+    margin-top: -37px;
+    transition: all ease 0.3s;
+    /* color: var(--primary); */
+    /* position: absolute; */
+    /* margin-top: -35px; */
+    /* margin-left: 27px; */
+    /* padding-left: 30px; */
+    /* background: rgba(255,255,255,0.8); */
+}
+nav .navbar ul .collection .sub-menu-1 .sub-menu-heading .sub-menu-2 ul li:hover{
+    color: var(--primary);
+}
+nav .navbar ul .collection .sub-menu-1 ul li:hover ul{
+    display: block;
+}
+nav .navbar ul li ul li a{
     text-decoration:none;
     color:var(--secondary);
     font-family:"Raleway-semibold";
     font-size:1rem;
-    padding:1rem 1.5rem;
     transition:all .3s ease;
     -webkit-transition:all .3s ease;
     -moz-transition:all .3s ease;
     -ms-transition:all .3s ease;
     -o-transition:all .3s ease;
 }
-nav .navbar a.active{
-    background:var(--primary);
-    color:var(--pure);
+nav .navbar ul .collection .sub-menu-1 ul li:last-child{
+    border-bottom: none;
 }
-nav .navbar a:hover{
-    background:var(--primary);
-    color:var(--pure);
+nav .navbar ul .collection .sub-menu-1 ul li a:hover{
+    color: var(--primary);
+    background: none;
 }
+
+/* magic shadow */
+
 .magic-shadow{
     position: relative;
     background:var(--heaven);
@@ -293,13 +440,23 @@ nav .navbar a:hover{
 }
 
 header.hero{
-    margin-top: 10px;
-    height:500px;
+    /* margin-top: 1px; */
+    height:520px;
     /* background-image:url(../images/3.jpg); */
     background-position: 0% 0%;
-    background-size: 100% 500px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow:hidden;
+}
+header.indexHero{
+    background-image: url(../images/banner/silver.jpg);
+    animation: sliderHero 12s infinite ease;
+    animation-delay: 2s;
+}
+@keyframes sliderHero {
+    0%{ background-image: url(../images/banner/silver.jpg);}
+    33%{ background-image: url(../images/banner/index-hero1.jpg);}
+    67%{ background-image: url(../images/banner/index-hero2.jpg);}
 }
 header.hero .container{
     position: relative;
@@ -367,12 +524,6 @@ header.hero p{
 
 header.hero button:first-child{
     margin-right:0.50rem;
-}
-
-header.hero .hero-image{
-    position:absolute;
-    top:-40px;
-    right:40px;
 }
 
 section{
@@ -511,20 +662,20 @@ section.top-products .item-slider .item-card button:hover{
 .slick-track{
     padding:1rem 0;
 }
-section.about-meal img{
+section.wedding-set img{
     width:85%;
 }
 .flex-1{
     flex:1;
 }
-section.about-meal h2{
+section.wedding-set h2{
     font-family: "Raleway-bold";
     font-size:1.4rem;
     color:var(--secondary);
     margin-bottom:2rem;
     line-height:1.3;
 }
-section.about-meal p{
+section.wedding-set p{
     line-height: 1.7;
     margin-bottom:4rem;
 }
@@ -584,14 +735,13 @@ section.big-deal {
     background-position: center;
     background-attachment: fixed;
 }
-section.big-deal .timer{
+section.big-deal .trust{
     display:flex;
     align-items: center;
     justify-content: center;
     margin-right:-2rem;
-    margin-bottom:2rem;
 }
-section.big-deal .timer div{
+section.big-deal .trust div{
     margin-right:2rem;
     background: var(--primary);
     width:150px;
@@ -606,16 +756,15 @@ section.big-deal .timer div{
     align-items: center;
     justify-content: center;
 }
-section.big-deal .timer div span:first-child{
+
+section.big-deal .trust div span{
     font-family: "Raleway-semibold";
-    font-size:2.5rem;
+    font-size:0.9rem;
     color:var(--heaven);
-    margin-bottom:0.05rem;
+    margin: 0.5rem 0.3rem 0 0.3rem;
+    text-align: center;
 }
-section.big-deal .timer div span:last-child{
-    font-family: "Raleway-medium";
-    color:var(--heaven);
-}
+
 .text-pure{
     color:var(--pure);
 }
@@ -921,16 +1070,11 @@ footer.copyright a{
     .nav-trigger{
         display:block;
     }
+    div.mobile-topbar{
+        display: block;
+    }
     header.topbar, nav{
         display:none;
-    }
-
-    header.hero {
-        margin-top:-4rem;
-    }
-    header.hero .hero-image{
-        right:-160px;
-        top:100px;
     }
     .top-products .slider-btn{
         display:none!important;
@@ -952,10 +1096,10 @@ footer.copyright a{
 }
 
 @media (max-width:768px){
-    .about-meal .about-meal-wrap{
+    .wedding-set .wedding-set-wrap{
         flex-direction: column;
     }
-    .about-meal .about-meal-wrap img{
+    .wedding-set .wedding-set-wrap img{
         width:100%;
         margin-bottom: 2rem;
     }
@@ -991,24 +1135,32 @@ footer.copyright a{
         display:block;
     }
 
+    /* hero section */
+    header.hero {
+        height: 400px;
+        background-size: 100% 100%;
+    }
+    header.hero .container .welcome img{
+        width: 150px;
+        height: auto;
+    }
+    header.hero .buttonHero{
+        display: none;
+    }
+
 }
 
 @media( max-width:576px){
-
-    header.hero .hero-image{
-        right:-235px;
-        top:150px;
-    }
     header.hero .container{
         padding-left:1rem;
     }
-    header.hero{
+    /* header.hero{
         margin-top:-3rem;
-    }
-    section.big-deal .timer > div{
+    } */
+    section.big-deal .trust > div{
         margin-right:0.50rem;
     }
-    section.big-deal .timer{
+    section.big-deal .trust{
         margin-right:-0.5rem;
     }
 

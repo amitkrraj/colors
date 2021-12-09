@@ -11,6 +11,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/silver.css" />
@@ -112,10 +113,12 @@
             <div class="top">
               <div class="container flex justify-between">
                 <div class="contact flex items-center">
-                  <img src="./icons/phone.svg" alt="" />
+                  <a href="tel:+917229842042"><img src="./icons/phone.svg"/></a>
                   <div>
-                    <h5>Call Us: (+91) 7229842042</h5>
-                    <h6>E-mail: hirajewllers77@gmail.com</h6>
+                    <a href="tel:+917229842042" style="text-decoration: none; color: #232b38">
+                      <h5>Call Us: </h5>
+                    </a>
+                    <h6>(+91) 7229842042</h6>
                   </div>
                 </div>
                 <div class="branding">
@@ -136,19 +139,108 @@
 
             <div class="navbar magic-shadow">
               <div class="container flex justify-center">
-                <a href="./index.html">Home</a>
-                <a href="./collection.html">Collection</a>
-                <a href="./gold.html">Gold</a>
-                <a href="#" class="active">Silver</a>
-                <a href="./platinum.html">Platinum</a>
-                <a href="./coin.html">Coin</a>
-                <a href="./about.html">About Us</a>
-                <!-- <a href="#">Contact Us</a> -->
+                <ul>
+                  <li>
+                    <a href="./index.html">
+                      <i class="fa fa-home"></i> Home </a>
+                  </li>
+
+                  <li class="collection">
+                    <a href="./collection.html">Collection <i class="fa fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                      <ul>
+                        <li class="sub-menu-heading"><a href="">Casting<i class="fa fa-angle-right"></i></a>
+                          <div class="sub-menu-2">
+                            <ul>
+                              <li>Men</li>
+                              <li>Women</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="sub-menu-heading"><a href="">Bengali<i class="fa fa-angle-right"></i></a>
+                          <div class="sub-menu-2">
+                            <ul>
+                              <li>Manglasutra</li>
+                              <li>Nath</li>
+                              <li>Kanti</li>
+                              <li>Jumari Buti</li>
+                              <li>Kamnoj Jhela</li>
+                              <li>Rino Ear</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="sub-menu-heading"><a href="">Desi <i class="fa fa-angle-right"></i></a>
+                          <div class="sub-menu-2">
+                            <ul>
+                              <li>Bali</li>
+                              <li>Kanti</li>
+                              <li>Jela</li>
+                              <li>Nath</li>
+                              <li>Aad</li>
+                              <li>Koth</li>
+                              <li>Pul</li>
+                              <li>Vali</li>
+                              <li>Manglasutra</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="collection">
+                    <a href="./gold.html"> Gold <i class="fa fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                      <ul>
+                        <li class="sub-menu-heading"><a href="">Payal<i class="fa fa-angle-right"></i></a>
+                        <li class="sub-menu-heading"><a href="">Bali<i class="fa fa-angle-right"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="collection">
+                    <a href="#" class="active">Silver <i class="fa fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                      <ul>
+                        <li class="sub-menu-heading"><a href="">Jari<i class="fa fa-angle-right"></i></a>
+                        <li class="sub-menu-heading"><a href="">Bartan<i class="fa fa-angle-right"></i></a>
+                        <li class="sub-menu-heading"><a href="">Murti<i class="fa fa-angle-right"></i></a>
+                        </li>
+                        <li class="sub-menu-heading"><a href="">Palna<i class="fa fa-angle-right"></i></a>
+                        </li>
+                        <li class="sub-menu-heading"><a href="">Vatla<i class="fa fa-angle-right"></i></a>
+                        </li>
+                        <li class="sub-menu-heading"><a href="">Thali<i class="fa fa-angle-right"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="collection">
+                    <a href="./coin.html">Coin <i class="fa fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                      <ul>
+                        <li class="sub-menu-heading"><a href="">Gold</a>
+                        </li>
+                        <li class="sub-menu-heading"><a href="">Silver</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a href="./platinum.html">Live Rate</a>
+                  </li>
+
+                  <li><a href="./about.html">About Us</a></li>
+
+                </ul>
               </div>
             </div>
           </nav>
 
-          <header class="hero flex items-center" style="background-image: url(./images/banner/silver.jpg)">
+          <header class="hero flex items-center" style="background-image: url(./images/banner/silver12345.jpg)">
             <div class="container">
               <div class="welcome flex items-center">
                 <!-- <span>Welcome</span> -->
@@ -178,13 +270,6 @@
                 आभूषण एक, खुशियां अनेक
               </p>
 
-              <!-- <div style="padding-top: 50px;">
-                            <button class="btn btn-primary">Collection</button>
-                            <button class="btn btn-secondary">Shop Now</button>
-                        </div> -->
-              <!-- <div class="hero-image">
-                            <img src="./images/logos/hj-logo-m-removebg.png" alt="">
-                        </div> -->
             </div>
           </header>
 
