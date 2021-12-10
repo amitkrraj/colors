@@ -115,10 +115,10 @@ body{
       -moz-transform:rotate(90deg) scaleX(-1);
       -ms-transform:rotate(90deg) scaleX(-1);
       -o-transform:rotate(90deg) scaleX(-1);
-      width:35px;
-      height:43px;
-      background-color:rgba(218,165,32,0.8);
-      border: rgba(255,255,255,0.5) 1px solid;
+      width:30px;
+      height:38px;
+      background-color:rgba(218,165,32,0.4);
+      border: rgba(255,255,255,0.6) 1px solid;
       border-radius: 5px;
 }
 .site-content-wrapper{
@@ -273,15 +273,16 @@ div.mobile-topbar .branding .title{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
 }
 
 div.mobile-topbar .branding .title .title-image img{
-    height: 30px;
+    height: 40px;
     width: 100%;
     padding-top: 5px;
 }
 div.mobile-topbar .branding .title pre{
-    font: 1.1em "Fira Sans", serif;
+    font: 0.9em "Fira Sans", serif;
     color: #fff;
     text-shadow: 0 0 3px #000, 0 0 5px #000;
     letter-spacing: 2px;
