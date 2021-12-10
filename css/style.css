@@ -211,14 +211,16 @@ nav .top .contact img, nav .top .time img{
 }
 
 nav .top .branding .title{
-    height: 55px;
-    /* background: var(--light) url(../images/logos/logo5.png) no-repeat center; */
-    background-size: 55px 55px;
+    /* height: 55px; */
+    /* background: url(../images/logos/logo5.png) no-repeat center; */
+    /* background-size: 55px 55px; */
     background-position: 110px;
+    /* display: none; */
 }
 
 nav .top .branding .title pre{
-    font: 2.1em "Fira Sans", serif;
+    font: 3.1em "Fira Sans", serif;
+    font-weight: bolder;
     color: var(--primary);
     text-shadow: 0 0 3px #000, 0 0 5px #000;
     letter-spacing: 2px;
@@ -264,6 +266,7 @@ div.mobile-topbar{
     position: sticky;
     display: none;
     text-align: center;
+    height: 55px;
 }
 div.mobile-topbar .branding .title{
     display: flex;
@@ -273,11 +276,12 @@ div.mobile-topbar .branding .title{
 }
 
 div.mobile-topbar .branding .title .title-image img{
-    height: 90px;
+    height: 30px;
     width: 100%;
+    padding-top: 5px;
 }
 div.mobile-topbar .branding .title pre{
-    font: 2.1em "Fira Sans", serif;
+    font: 1.1em "Fira Sans", serif;
     color: #fff;
     text-shadow: 0 0 3px #000, 0 0 5px #000;
     letter-spacing: 2px;
@@ -668,9 +672,9 @@ section.wedding-set img{
 .flex-1{
     flex:1;
 }
-section.wedding-set h2{
+section.wedding-set h4{
     font-family: "Raleway-bold";
-    font-size:1.4rem;
+    font-size:1.1rem;
     color:var(--secondary);
     margin-bottom:2rem;
     line-height:1.3;
