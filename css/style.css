@@ -118,7 +118,7 @@ body{
       width:30px;
       height:38px;
       /* background-color:rgba(218,165,32,0.4); */
-      background-color:rgba(255,255,255,0.6);
+      background-color:rgba(255,255,255,0.7);
       border: rgba(255,255,255,0.6) 1px solid;
       border-radius: 5px;
 }
@@ -267,14 +267,14 @@ div.mobile-topbar{
     position: sticky;
     display: none;
     text-align: center;
-    height: 55px;
+    height: 60px;
 }
 div.mobile-topbar .branding .title{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 32px;
 }
 
 div.mobile-topbar .branding .title .title-image img{
@@ -283,7 +283,7 @@ div.mobile-topbar .branding .title .title-image img{
     padding-top: 5px;
 }
 div.mobile-topbar .branding .title pre{
-    font: 0.9em "Fira Sans", serif;
+    font: 1.0em "Fira Sans", serif;
     color: #fff;
     text-shadow: 0 0 3px #000, 0 0 5px #000;
     letter-spacing: 2px;
@@ -1016,12 +1016,17 @@ footer.copyright a{
 }
 
 .nav-background .mobile-logo img{
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
 .nav-background .mobile-nav{
     padding:1rem;
+}
+
+.nav-background .mobile-nav .cart div p{
+    color: var(--primary);
+    font-weight: bold;
 }
 .nav-background .mobile-nav ul{
     list-style-type: none;
