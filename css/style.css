@@ -180,8 +180,9 @@ body{
 
   nav .top{
       padding: 0.8em;
-      /* background: url(../images/floral-pc.jpg); */
-      background: #f0f0f0;
+      background: url(../images/banner/Like-Stars.jpg);
+      /* background: gold; */
+      /* background: #f0f0f0; */
   }
   nav .top .contact h5,  nav .top .time h5{
       font-family:"Raleway-black";
@@ -206,9 +207,9 @@ nav .top .branding .title{
 }
 
 nav .top .branding .title pre{
-    font: 3.1em "Fira Sans", serif;
+    font: 3.6em "Fira Sans", serif;
     font-weight: bolder;
-    color: var(--primary);
+    color: #fff;
     text-shadow: 0 0 3px #000, 0 0 5px #000;
     letter-spacing: 2px;
 }
