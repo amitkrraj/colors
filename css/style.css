@@ -180,7 +180,9 @@ body{
 
   nav .top{
       padding: 0.8em;
-      background: url(../images/banner/Like-Stars.jpg);
+      /* background: url(../images/banner/Like-Stars.jpg); */
+      background-size: 100%;
+      background-repeat: no-repeat;
       /* background: gold; */
       /* background: #f0f0f0; */
   }
@@ -451,6 +453,7 @@ header.hero .container{
 }
 header.hero .welcome{
     margin-bottom:0.25rem;
+    margin-left: -1.5rem;
 }
 header.hero .welcome span{
     font-family:"Raleway-bold";

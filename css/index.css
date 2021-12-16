@@ -1,6 +1,6 @@
 #glowtxt {
   font-size: 10em;
-  color: #808080;
+  color: gold;
 }
 
 #glowtxt span {
@@ -55,12 +55,12 @@
   0%,
   100% {
     filter: blur(2px);
-    color: #fff;
+    color: blue;
     text-shadow: 0 0 10px #0984e3;
   }
   5%,
   95% {
-    color: #111;
+    color: #fff;
     filter: blur(0px);
     text-shadow: none;
   }
