@@ -162,9 +162,9 @@ div.viewdetails .buybutton:hover {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .resp {
-    width: 98%;
-    margin: 0 5px 30px 5px;
+    width: 46%;
+    margin: 0 5px 20px 5px;
   }
 }
