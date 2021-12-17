@@ -633,7 +633,7 @@ section.top-products .item-slider .item-card button:hover{
 }
 section.wedding-set img{
     width:85%;
-    height: 530px;
+    height: 450px;
 }
 .flex-1{
     flex:1;
@@ -647,7 +647,7 @@ section.wedding-set img{
     justify-content: center;
     padding: 0 8px;
 }
-section.wedding-set .flex-2 h4, h3{
+section.wedding-set .flex-2 h4, section.wedding-set .flex-2 h3{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:1.1rem;
     color:var(--secondary);
@@ -1132,7 +1132,7 @@ footer.copyright a{
         height: auto;
     }
     header.hero .container #glowtxt span{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
     header.hero .buttonHero{
         display: none;
