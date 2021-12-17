@@ -102,7 +102,7 @@ body{
 
   .nav-trigger{
       position: absolute;
-      top:0;
+      top:5px;
       left:0;
       z-index:1;
       padding:9px;
@@ -263,7 +263,7 @@ div.mobile-topbar{
     position: sticky;
     display: none;
     text-align: center;
-    height: 60px;
+    height: 70px;
 }
 div.mobile-topbar .branding .title{
     display: flex;
@@ -274,9 +274,9 @@ div.mobile-topbar .branding .title{
 }
 
 div.mobile-topbar .branding .title .title-image img{
-    height: 50px;
+    height: 55px;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 div.mobile-topbar .branding .title pre{
     font: 1.0em "Fira Sans", serif;
@@ -900,16 +900,16 @@ footer .box ul li a:hover{
 }
 footer .box h3{
     border-bottom:1px solid var(--primary);
-    padding-bottom:1rem;
-    margin-bottom:1rem;
+    padding-bottom:7px;
+    margin-bottom:10px;
 }
 
 footer .box p{
-    line-height: 1.6;
-    margin-bottom:1rem;
+    line-height: 1.1;
+    margin-bottom:10px;
 }
 footer .box ul li{
-    margin-bottom:1rem;
+    margin-bottom:9px;
 }
 footer .box:nth-child(3) > div {
     display:flex;
