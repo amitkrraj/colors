@@ -633,20 +633,29 @@ section.top-products .item-slider .item-card button:hover{
 }
 section.wedding-set img{
     width:85%;
+    height: 530px;
 }
 .flex-1{
     flex:1;
 }
-section.wedding-set h4{
-    font-family: "Raleway-bold";
+.flex-2{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+}
+section.wedding-set .flex-2 h4, h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:1.1rem;
     color:var(--secondary);
-    margin-bottom:2rem;
-    line-height:1.3;
+    /* line-height:1.3; */
 }
 section.wedding-set p{
-    line-height: 1.7;
-    margin-bottom:4rem;
+    line-height: 1.5;
+    margin-top:10px;
 }
 
 section.our-services{
@@ -1057,10 +1066,12 @@ footer.copyright a{
 @media (max-width:768px){
     .wedding-set .wedding-set-wrap{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .wedding-set .wedding-set-wrap img{
         width:100%;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     section{
