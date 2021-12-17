@@ -16,70 +16,23 @@
   box-sizing: border-box;
 }
 
-.hjcard {
-  padding: 0 16px;
-  float: left;
-  width: 49.99999%;
-}
 
-.hjcard .carditem {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin: 10px;
-  position: relative;
-  overflow: hidden;
-}
+@media (max-width:992px){
 
-.hjcard .carditem img {
-  width: 96%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.hirajisec{
-  display: flex;
-}
-/* .hirajisec .hirajipic{
-  width: 49%;
-}
-.hirajisec .hirajipic img{
-  width: 100%;
-} */
-@media only screen and (max-width: 992px) {
-.hjcard {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .hjcard {
-    width: 100%;
-  }
-
-  .hero{
-      background-color: #eee;
+    header.hero{
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      overflow:hidden;
+      margin-top: -21px;
+    }
+    header.hero .container{
+        padding-left:0;
+    }
+    .hero{
+      background-color: #f0f0f0;
       text-align: center;
       align-items: center;
       align-content: center;
-      padding-top: 400px;
-  }
-
-  .hero .container img{
-    height: 150px;
-  }
-
-  .hero video{
-    padding: 0 5px;
-    width: 100%;
-    height: 100%;
-  }
-  .hirajisec .hirajipic{
-    width: 99%;
-    margin: 6px;
-  }
-  .hirajisec .hirajipic img{
-    width: 100%;
+      margin-bottom: -5px;
   }
 }
