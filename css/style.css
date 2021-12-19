@@ -129,7 +129,7 @@ body{
 }
 
 .site-content-wrapper.scaled{
-    transform:scale(0.9) translateX(75%);
+    transform:scale(0.9) translateX(80%);
     border-radius:3px;
     box-shadow:0 3px 10px 0 var(--secondary);
 }
@@ -275,7 +275,7 @@ div.mobile-topbar .branding .title{
 
 div.mobile-topbar .branding .title .title-image img{
     height: 55px;
-    width: 100%;
+    width: 45px;
     padding-top: 10px;
 }
 div.mobile-topbar .branding .title pre{
@@ -969,6 +969,7 @@ footer.copyright a{
 .nav-background .mobile-nav .cart div p{
     color: var(--primary);
     font-weight: bold;
+    font-size: 1.3rem;
 }
 .nav-background .mobile-nav ul{
     list-style-type: none;
@@ -979,19 +980,21 @@ footer.copyright a{
 .nav-background .mobile-nav ul li a{
     text-decoration: none;
     color:var(--secondary);
-    font-family: "Raleway-medium";
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
 }
 
 .nav-background .mobile-nav ul li a.active{
     color:var(--primary);
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .nav-background .mobile-nav ul li a:hover{
     color:var(--primary);
 }
 .nav-background .contact, .nav-background .time{
-    padding:1rem;
+    padding: 5px;
     padding-left:0;
 }
 .nav-background .contact img, .nav-background .time img{
@@ -1000,7 +1003,7 @@ footer.copyright a{
 .nav-background .contact h5,.nav-background .time h5{
     font-family:"Raleway-bold";
     margin-bottom:0.25rem;
-    font-size:1rem;
+    font-size:1.2rem;
 }
 .nav-background .contact h6, .nav-background .contact h6{
     font-size: 0.75rem;
