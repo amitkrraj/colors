@@ -100,10 +100,11 @@ body{
       z-index:1;
   }
   .nav-background .mobile-logo img{
-      width: 150px;
+      margin-left: 40px;
   }
   .nav-background .mobile-nav{
-      background-color: lightgray;
+      background-color: lightblue;
+      height: 100vh;
   }
 
   .nav-trigger{
