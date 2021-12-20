@@ -165,6 +165,96 @@ div.viewdetails .buybutton:hover {
 @media only screen and (max-width: 700px) {
   .resp {
     width: 46%;
+    height: 240px;
     margin: 0 5px 20px 5px;
+    overflow: hidden;
   }
+  .resp .gallery {
+    height:320px;
+    margin: 2px;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+
+  .resp .gallery img {
+    border-radius: 5px;
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+  }
+
+  div.desc {
+  margin-top: 6px;
+  text-align: center;
+  color: var(--secondary);
+  text-decoration: solid;
+  font-size: 15px;
+  }
+  /* content table design */
+  .hoverContent h4{
+  color: var(--primary);
+  margin-bottom: 13px;
+  margin-left: 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+div.details {
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+}
+
+div.details table tr {
+  border: none;
+}
+
+td {
+  color: var(--pure);
+  padding: 0 10px 10px 5px;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* content buy now button */
+
+div.buynow {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  display: inline;
+  margin-left: -5px;
+  margin-top: 5px;
+}
+
+div.buynow button {
+  color: var(--light);
+  border: var(--ternary) 1px solid;
+  border-radius: 0px;
+  background-color: transparent;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
+div.buynow button:hover {
+  cursor: pointer;
+  color: var(--primary);
+  transition: ease 0.3s;
+}
+
+div.viewdetails {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.viewdetails .buybutton {
+  padding: 4px 10px;
+  background-color: var(--pure);
+  border: var(--primary) 1px solid;
+  border-radius: 4px;
+  font-size: 11px;
+  color: var(--ternary);
+}
 }
