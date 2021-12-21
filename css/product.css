@@ -213,7 +213,7 @@ div.details table tr {
 td {
   color: var(--pure);
   padding: 0 10px 10px 5px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -225,7 +225,7 @@ div.buynow {
   text-align: center;
   display: inline;
   margin-left: -5px;
-  margin-top: 5px;
+  margin-top: 1rem;
 }
 
 div.buynow button {
@@ -235,7 +235,7 @@ div.buynow button {
   background-color: transparent;
   padding: 5px 15px;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 div.buynow button:hover {
