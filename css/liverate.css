@@ -1,6 +1,6 @@
 /* rate */
 
-.iframeContainer{
+.iframeContainer1{
    position: relative;
    width: 800px;
    height: 285px;
@@ -15,14 +15,41 @@
    height: 1155px;
 }
 
-.iframeContent11{
+.iframeContainer2{
    display: none;
+   position: relative;
+   width: 410px;
+   height: 285px;
+   overflow: hidden;
+   margin-bottom: 20px;
 }
 
+.iframeContent2{
+   position: absolute;
+   top: -826px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+.iframeContainer3{
+   position: relative;
+   width: 380px;
+   height: 275px;
+   overflow: hidden;
+}
+
+.iframeContent3{
+   position: absolute;
+   top: -856px;
+   left: -800px;
+   width: 1200px;
+   height: 1155px;
+}
 
 @media( max-width:800px){
 
-   .iframeContainer{
+   .iframeContainer1{
    position: relative;
    width: 410px;
    height: 285px;
@@ -38,8 +65,32 @@
    height: 1155px;
 }
 
-.iframeContent11{
+.iframeContainer2{
    display: block;
+   position: relative;
+   width: 410px;
+   height: 285px;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.iframeContent2{
+   position: absolute;
+   top: -826px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+.iframeContainer3{
+   position: relative;
+   width: 410px;
+   height: 285px;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.iframeContent3{
    position: absolute;
    top: -826px;
    left: -10px;
@@ -51,7 +102,7 @@
 
 @media( max-width:600px){
 
-.iframeContainer{
+.iframeContainer1{
    position: relative;
    width: 400px;
    height: 285px;
@@ -66,8 +117,26 @@
    height: 1155px;
 }
 
-.iframeContent11{
+.iframeContainer2{
    display: block;
+}
+
+.iframeContent2{
+   position: absolute;
+   top: -826px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+.iframeContainer3{
+   position: relative;
+   width: 400px;
+   height: 285px;
+   overflow: hidden;
+}
+
+.iframeContent3{
    position: absolute;
    top: -826px;
    left: -10px;
