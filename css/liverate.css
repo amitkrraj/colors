@@ -98,31 +98,7 @@
 
 .iframeContent1{
    position: absolute;
-   top: -1030px;
-   left: -10px;
-   width: 1200px;
-   height: 1155px;
-}
-
-.iframeContent11{
-   position: absolute;
-   top: -1330px;
-   left: -10px;
-   width: 1200px;
-   height: 1155px;
-}
-
-.iframeContent12{
-   position: absolute;
-   top: -5230px;
-   left: -10px;
-   width: 1200px;
-   height: 1155px;
-}
-
-.iframeContent13{
-   position: absolute;
-   top: 0px;
+   top: -830px;
    left: -10px;
    width: 1200px;
    height: 1155px;
