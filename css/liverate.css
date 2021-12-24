@@ -98,7 +98,7 @@
 
 .iframeContent1{
    position: absolute;
-   top: -1030px;
+   top: -1830px;
    left: -10px;
    width: 1200px;
    height: 1155px;
@@ -107,13 +107,13 @@
 .iframeContainer2{
    position: relative;
    width: 330px;
-   height: 265px;
+   height: 260px;
    overflow: hidden;
 }
 
 .iframeContent2{
    position: absolute;
-   top: -870px;
+   top: -872px;
    left: -10px;
    width: 1200px;
    height: 1155px;
