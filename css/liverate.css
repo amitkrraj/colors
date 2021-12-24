@@ -9,24 +9,22 @@
 
 .iframeContent1{
    position: absolute;
-   top: -750px;
-   left: -26px;
+   top: -930px;
+   left: -7px;
    width: 1161px;
    height: 1155px;
 }
 
 .iframeContainer2{
-   display: none;
    position: relative;
-   width: 410px;
-   height: 287px;
+   width: 726px;
+   height: 250px;
    overflow: hidden;
-   margin-bottom: 20px;
 }
 
 .iframeContent2{
    position: absolute;
-   top: -826px;
+   top: -907px;
    left: -10px;
    width: 1200px;
    height: 1155px;
@@ -100,7 +98,7 @@
 
 }
 
-/* @media( max-width:600px){
+@media( max-width:600px){
 
 .iframeContainer1{
    position: relative;
@@ -118,7 +116,10 @@
 }
 
 .iframeContainer2{
-   display: block;
+   position: relative;
+   width: 400px;
+   height: 285px;
+   overflow: hidden;
 }
 
 .iframeContent2{
@@ -145,4 +146,4 @@
 }
 
 }
- */
+
