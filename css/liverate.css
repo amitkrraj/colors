@@ -2,16 +2,16 @@
 
 .iframeContainer1{
    position: relative;
-   width: 800px;
-   height: 287px;
+   width: 730px;
+   height: 170px;
    overflow: hidden;
 }
 
 .iframeContent1{
    position: absolute;
-   top: -826px;
-   left: -10px;
-   width: 1200px;
+   top: -750px;
+   left: -26px;
+   width: 1161px;
    height: 1155px;
 }
 
