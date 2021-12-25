@@ -1,45 +1,41 @@
 /* rate */
 
-@media( max-width:1600px){
-
-   .iframeContainer1{
+.iframeContainer1{
    position: relative;
    width: 730px;
    height: 278px;
    overflow: hidden;
-   }
+}
 
-   .iframeContent1{
+.iframeContent1{
    position: absolute;
    top: -727px;
    left: -7px;
    width: 1161px;
    height: 1155px;
-   }
+}
 
-   .iframeContainer2{
+.iframeContainer2{
    position: relative;
    width: 765px;
    height: 275px;
    overflow: hidden;
-   }
+}
 
-   .iframeContent2{
+.iframeContent2{
    position: absolute;
    top: -418px;
    left: -10px;
    width: 1200px;
    height: 1155px;
-   }
 }
-
 
 @media( max-width:800px){
 
    .iframeContainer1{
    position: relative;
    width: 410px;
-   height: 285px;
+   height: 245px;
    overflow: hidden;
    margin-bottom: 20px;
 }
