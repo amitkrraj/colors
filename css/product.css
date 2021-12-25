@@ -197,7 +197,7 @@ div.viewdetails .buybutton:hover {
   margin-bottom: 13px;
   margin-left: 7px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 div.details {
@@ -213,7 +213,7 @@ div.details table tr {
 td {
   color: var(--pure);
   padding: 0 10px 8px 5px;
-  font-size: 13px;
+  font-size: 12px;
   text-align: left;
 }
 
