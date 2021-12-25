@@ -73,6 +73,11 @@ div.desc {
   padding: 15px 0;
 }
 
+.hoverContent .border1 a{
+  text-decoration: none;
+  color: var(--light);
+}
+
 .responsive:hover .hoverContent{
    opacity: 1;
    transform: scaleZ(0.8) scaleY(0.8) scaleX(0.8);
