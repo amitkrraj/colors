@@ -69,22 +69,6 @@
    height: 1155px;
 }
 
-.iframeContainer3{
-   position: relative;
-   width: 410px;
-   height: 285px;
-   overflow: hidden;
-   margin-bottom: 20px;
-}
-
-.iframeContent3{
-   position: absolute;
-   top: -856px;
-   left: -10px;
-   width: 1200px;
-   height: 1155px;
-}
-
 }
 
 @media( max-width:600px){
@@ -92,13 +76,13 @@
 .iframeContainer1{
    position: relative;
    width: 330px;
-   height: 265px;
+   height: 259px;
    overflow: hidden;
 }
 
 .iframeContent1{
    position: absolute;
-   top: -870px;
+   top: -890px;
    left: -10px;
    width: 1200px;
    height: 1155px;
@@ -113,7 +97,8 @@
 
 .iframeContent2{
    position: absolute;
-   top: -873px;
+   /* top: -873px; */
+   top: -877px;
    left: -10px;
    width: 1200px;
    height: 1155px;
