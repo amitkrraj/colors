@@ -7,6 +7,7 @@
   float: left;
   width: 23.99999%;
   margin: 5px;
+  overflow: hidden;
 }
 
 .responsive:hover{
@@ -44,6 +45,7 @@ div.desc {
   text-decoration: solid;
   font-weight: bold;
   font-size: large;
+  overflow: hidden;
 }
 
 /* Hover on Category Effect */
@@ -89,25 +91,12 @@ div.desc {
   font-weight: bold;
 }
 
-/* media query for responsive */
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.collectionalign{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Category by Gender */
@@ -121,15 +110,36 @@ div.desc {
   height: 90%;
 }
 
-@media only screen and (max-width: 700px) {
+
+/* media query for responsive */
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 32.99999%;
+    margin: 6px 0;
+  }
+  .responsiveG {
+    width: 32.99999%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .responsive {
+    width: 47.99999%;
+    margin: 6px 0;
+  }
   .responsiveG {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  .responsive {
+    width: 90%;
+  }
   .responsiveG {
-    width: 100%;
+    width: 90%;
   }
 }
