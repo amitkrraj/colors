@@ -198,7 +198,7 @@ div.viewdetails .buybutton:hover {
 
 div.details {
   width: 100%;
-  height: 110px;
+  height: 100px;
   overflow: hidden;
 }
 
@@ -221,7 +221,7 @@ div.buynow {
   text-align: center;
   display: inline;
   margin-left: -5px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 div.buynow button {
