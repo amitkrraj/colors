@@ -14,7 +14,6 @@
   box-shadow: 0 0 8px #888888;
   transition: ease 0.5s;
   border-radius: 3px;
-  cursor: pointer;
 }
 
 div.gallery {
@@ -73,6 +72,7 @@ div.desc {
   text-align: center;
   font-size: larger;
   padding: 15px 0;
+  cursor: pointer;
 }
 
 .hoverContent .border1 a{
@@ -95,7 +95,6 @@ div.desc {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 }
 
@@ -112,8 +111,7 @@ div.desc {
 
 
 /* media query for responsive */
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .responsive {
     width: 32.99999%;
     margin: 6px 0;
@@ -121,6 +119,13 @@ div.desc {
   .responsiveG {
     width: 32.99999%;
     margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .collectionalign{
+    flex-wrap:wrap;
+    justify-content: center;
   }
 }
 
@@ -133,6 +138,10 @@ div.desc {
     width: 49.99999%;
     margin: 0;
   }
+  .collectionalign{
+    flex-wrap:wrap;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -141,5 +150,9 @@ div.desc {
   }
   .responsiveG {
     width: 86%;
+  }
+  .collectionalign{
+    flex-wrap:wrap;
+    justify-content: center;
   }
 }

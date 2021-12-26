@@ -520,11 +520,12 @@ section.top-products{
 }
 
 .section-heading{
-    font-family:"Raleway-bold";
-    font-size: 1.4rem;
+    margin: 0 3rem 5rem 3rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.1rem;
     text-align:center;
     Position:relative;
-    margin-bottom:6rem;
+    color: var(--ternary);
 }
 .section-heading:after{
     content:'';
@@ -1090,11 +1091,12 @@ footer.copyright a{
     }
 
     .section-heading{
-        font-family:"Raleway-bold";
-        font-size: 1.4rem;
+        margin: 0 1rem 3rem 1rem;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 0.9rem;
         text-align:center;
         Position:relative;
-        margin-bottom:3rem;
+        color: var(--ternary);
     }
 
     section.our-services .card-wrapper{
