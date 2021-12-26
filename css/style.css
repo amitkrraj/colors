@@ -525,7 +525,7 @@ section.top-products{
     font-size: 1.1rem;
     text-align:center;
     Position:relative;
-    color: var(--ternary);
+    color: var(--secondary);
 }
 .section-heading:after{
     content:'';
@@ -537,6 +537,9 @@ section.top-products{
     background-position: center;
     position:absolute;
     bottom:-40px;
+}
+.section-heading p{
+    color: var(--ternary);
 }
 section.top-products .item-slider .item-card{
     background:var(--heaven);
@@ -1096,7 +1099,6 @@ footer.copyright a{
         font-size: 0.9rem;
         text-align:center;
         Position:relative;
-        color: var(--ternary);
     }
 
     section.our-services .card-wrapper{
