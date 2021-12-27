@@ -480,7 +480,7 @@ header.hero p{
     margin-bottom:1rem;
 }
 .btn{
-    padding:0.75rem 0.75rem;
+    padding:0.69rem 0.69rem;
     border-radius:4px;
     line-height:0.8;
     font-size:1.2rem;
@@ -653,6 +653,11 @@ section.wedding-set img{
     justify-content: center;
     padding: 0 8px;
 }
+.flex-2 button{
+    margin-top: 10px;
+    padding: 10px;
+}
+
 section.wedding-set .flex-2 h4, section.wedding-set .flex-2 h3{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:1.1rem;
@@ -701,7 +706,7 @@ section.our-services .service-card p{
     color:var(--primary);
 }
 
-section.big-deal {
+section.features {
     background: linear-gradient(
         rgba(35,43,56,0.9),
         rgba(35,43,56,0.9)
@@ -711,7 +716,7 @@ section.big-deal {
     background-position: center;
     background-attachment: fixed;
 }
-section.big-deal .trust{
+section.features .trust{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -719,7 +724,7 @@ section.big-deal .trust{
     justify-content: center;
     margin-right:-2rem;
 }
-section.big-deal .trust div{
+section.features .trust div{
     margin-right:2rem;
     background: var(--primary);
     width:150px;
@@ -731,7 +736,7 @@ section.big-deal .trust div{
     justify-content: center;
 }
 
-section.big-deal .trust div span{
+section.features .trust div span{
     font-family: "Raleway-semibold";
     font-size:0.9rem;
     color:var(--heaven);
@@ -1159,25 +1164,25 @@ footer.copyright a{
     }
 
     /* certificate */
-    section.big-deal .trust{
+    section.features .trust{
         margin-right:-0.5rem;
         padding-left: 15px;
         padding-right: 15px;
 
     }
-    section.big-deal .trust > div{
+    section.features .trust > div{
         margin-right:0.90rem;
         margin-bottom: 00.70rem;
         padding: 10px;
         width: 35%;
         height: 110px;
     }
-    section.big-deal .trust > div img{
+    section.features .trust > div img{
         /* margin: 5px; */
         width: 50px;
         height: 50px;
     }
-    section.big-deal .trust > div span{
+    section.features .trust > div span{
         font-size: 11px;
     }
 }
@@ -1239,4 +1244,53 @@ footer.copyright a{
 
 .darkmode-layer, .darkmode-toggle {
   z-index: 9999;
+}
+
+.darkmode--activated{
+    mix-blend-mode: difference;
+    isolation: isolate;
+    color: #fff ;
+}
+
+.darkmode--activated img{
+    mix-blend-mode: difference;
+    isolation: isolate;
+}
+.darkmode--activated .topbar{
+    mix-blend-mode: difference;
+    background-color: #000;
+}
+
+.darkmode--activated nav .top{
+    mix-blend-mode: difference;
+    isolation: isolate;
+    background-image: none;
+}
+
+.darkmode--activated .hero{
+    mix-blend-mode: difference;
+    isolation: isolate;
+}
+
+.darkmode--activated .features{
+    mix-blend-mode: difference;
+    isolation: isolate;
+}
+
+.darkmode--activated .features img{
+    mix-blend-mode: difference;
+    color: white;
+}
+
+.darkmode--activated .features .container .trust > div > img{
+    mix-blend-mode: difference;
+    background-color:#EEBF00;
+}
+
+.darkmode--activated .features .container .trust > div > span{
+    color: #000;
+}
+
+.darkmode--activated footer{
+    border-color: #000;
 }
