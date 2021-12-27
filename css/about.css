@@ -56,3 +56,8 @@
 .darkmode--activated .hero{
   background-color: #000;
 }
+
+.darkmode--activated button{
+    mix-blend-mode: difference;
+    isolation: isolate;
+}

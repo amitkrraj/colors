@@ -54,3 +54,9 @@ hr.style-eight:after {
       font-size: 16px;
   }
 }
+
+.darkmode--activated hr.style-eight::after{
+    /* mix-blend-mode: difference; */
+    /* isolation: isolate; */
+    color: #0028FF;
+}

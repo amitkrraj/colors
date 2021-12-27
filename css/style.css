@@ -1249,6 +1249,11 @@ footer.copyright a{
     mix-blend-mode: difference;
     isolation: isolate;
 }
+.darkmode--activated h2{
+    mix-blend-mode: difference;
+    isolation: isolate;
+    color: goldenrod;
+}
 
 .darkmode--activated .topbar{
     mix-blend-mode: difference;
@@ -1264,6 +1269,15 @@ footer.copyright a{
     isolation: isolate;
     color: #fff ;
 }
+.darkmode--activated nav .navbar ul li{
+    mix-blend-mode: difference;
+    color: var(--pure);
+}
+.darkmode--activated nav .navbar ul li a{
+    mix-blend-mode: difference;
+    color: var(--pure);
+}
+
 .darkmode--activated nav .navbar ul li a:hover{
     mix-blend-mode: difference;
     background:var(--primary);
