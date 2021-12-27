@@ -1,3 +1,8 @@
+.hero{
+      background-color: #f0f0f0;
+      user-select: none;
+  }
+
 
 .container .text{
     font-family: 'Times New Roman', Times, serif;
@@ -35,7 +40,7 @@
       align-content: center;
       margin-bottom: -5px;
       user-select: none;
-  }
+    }
 
   .laptop1{
     display: none;
@@ -45,4 +50,9 @@
     display: block;
     height: 250px;
   }
+}
+
+
+.darkmode--activated .hero{
+  background-color: #000;
 }
