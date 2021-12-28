@@ -1324,16 +1324,3 @@ footer.copyright a{
     isolation: isolate;
     background-color: #000;
 }
-
-.nav-background .mobile-logo{
-    /* padding:1.2rem; */
-    width: 80%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-.nav-background .mobile-logo img{
-    width: 130px;
-    height: auto;
-}
