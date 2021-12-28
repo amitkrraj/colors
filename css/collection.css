@@ -1,5 +1,14 @@
-* {
-  box-sizing: border-box;
+/* colors  */
+
+:root {
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
 }
 
 .responsive {
@@ -7,13 +16,13 @@
   float: left;
   width: 23.99999%;
   margin: 5px;
+  overflow: hidden;
 }
 
 .responsive:hover{
   box-shadow: 0 0 8px #888888;
   transition: ease 0.5s;
   border-radius: 3px;
-  cursor: pointer;
 }
 
 div.gallery {
@@ -26,7 +35,7 @@ div.gallery {
 }
 
 div.gallery:hover{
-  border: 2px solid gold;
+  border: 2px solid var(--primary);
 
 }
 
@@ -44,6 +53,7 @@ div.desc {
   text-decoration: solid;
   font-weight: bold;
   font-size: large;
+  overflow: hidden;
 }
 
 /* Hover on Category Effect */
@@ -65,12 +75,19 @@ div.desc {
 }
 
 .hoverContent .border1{
+  background: var(--primary);
   border: rgb(200, 200, 200) 1px solid;
   border-radius: 5px;
   margin: 40% 25px;
   text-align: center;
   font-size: larger;
   padding: 15px 0;
+  cursor: pointer;
+}
+
+.hoverContent .border1 a{
+  text-decoration: none;
+  color: #000;
 }
 
 .responsive:hover .hoverContent{
@@ -84,25 +101,11 @@ div.desc {
   font-weight: bold;
 }
 
-/* media query for responsive */
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.collectionalign{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Category by Gender */
@@ -116,15 +119,64 @@ div.desc {
   height: 90%;
 }
 
-@media only screen and (max-width: 700px) {
+
+/* media query for responsive */
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 32.99999%;
+    margin: 6px 0;
+  }
+  .responsiveG {
+    width: 32.99999%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .collectionalign{
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .responsive {
+    width: 47.99999%;
+    margin: 6px 0;
+  }
   .responsiveG {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 0;
+  }
+  .collectionalign{
+    flex-wrap:wrap;
+    justify-content: center;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsiveG {
-    width: 100%;
+  .responsive {
+    width: 86%;
   }
+  .responsiveG {
+    width: 86%;
+  }
+  .collectionalign{
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+}
+
+.darkmode--activated .hoverContent{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.darkmode--activated .hoverContent .border1{
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+.darkmode--activated .hoverContent .border1:hover{
+  mix-blend-mode: difference;
+  transition: all 0.6s;
+  color: #000;
 }

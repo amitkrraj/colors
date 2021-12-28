@@ -1,0 +1,104 @@
+/* rate */
+
+.iframeContainer1{
+   position: relative;
+   width: 730px;
+   height: 278px;
+   overflow: hidden;
+}
+
+.iframeContent1{
+   position: absolute;
+   top: -727px;
+   left: -7px;
+   width: 1161px;
+   height: 1155px;
+}
+
+.iframeContainer2{
+   position: relative;
+   width: 765px;
+   height: 275px;
+   overflow: hidden;
+}
+
+.iframeContent2{
+   position: absolute;
+   top: -418px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+@media( max-width:800px){
+
+   .iframeContainer1{
+   position: relative;
+   width: 410px;
+   height: 245px;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.iframeContent1{
+   position: absolute;
+   top: -866px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+.iframeContainer2{
+   display: block;
+   position: relative;
+   width: 410px;
+   height: 285px;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.iframeContent2{
+   position: absolute;
+   top: -846px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+}
+
+@media( max-width:600px){
+
+.iframeContainer1{
+   position: relative;
+   width: 330px;
+   height: 229px;
+   overflow: hidden;
+}
+
+.iframeContent1{
+   position: absolute;
+   top: -905px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+.iframeContainer2{
+   position: relative;
+   width: 330px;
+   height: 258px;
+   overflow: hidden;
+}
+
+.iframeContent2{
+   position: absolute;
+   /* top: -873px; */
+   top: -877px;
+   left: -10px;
+   width: 1200px;
+   height: 1155px;
+}
+
+}
+
